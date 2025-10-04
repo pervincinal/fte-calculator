@@ -15,8 +15,8 @@ app.add_middleware(
 def read_root():
     return {"message": "QA FTE Calculator API is running"}
 
-@app.get("/api/v1/health")
-def health_check():
+@app.get("/health")
+def health_alias():
     return {"status": "healthy"}
 
 # Mock endpoints for testing
